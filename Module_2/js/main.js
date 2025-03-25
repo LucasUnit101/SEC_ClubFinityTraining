@@ -1,19 +1,10 @@
-// Conditionals : Switch Statements
+// Conditionals : Ternary Operator
 
-switch (1) {
-
-  case 1 :
-    console.log(1);
-    break;
-
-  case 2:
-    console.log(2);
-    break;
-
-  case 3:
-    console.log(3);
-    break;
-  
-  default: 
-    console.log("No Match");
-}
+let playerOne = "rock";
+let computer = "rock";
+let result = playerOne === computer ? "Tie Game!"
+: playerOne === "rock" && computer === "paper" ? "Computer wins!"
+: playerOne == "paper" && computer === "scisssors" ? "Computer wins!"
+: playerOne === "scissors" && computer === "rock" ? "Computer wins!"
+: "playerOne wins";
+console.log(result)

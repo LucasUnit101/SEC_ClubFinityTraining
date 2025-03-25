@@ -1,3 +1,5 @@
-const myVariable = "Mathematics";
+const myNumber = 42;
+const myFloat = 42.01;
+const myString = "42"
 
-console.log(myVariable.split(""));
+console.log(isNaN("Dave"));

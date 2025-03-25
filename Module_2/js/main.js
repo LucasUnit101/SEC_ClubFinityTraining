@@ -1,28 +1,19 @@
+// Conditionals : Switch Statements
 
-let choices = ["rock", "paper", "scissors"];
+switch (1) {
 
-const playerOne = choices[Math.random(Math.floor() * 3) + 1]
-const computer = choices[Math.random(Math.floor() * 3) + 1]
+  case 1 :
+    console.log(1);
+    break;
 
+  case 2:
+    console.log(2);
+    break;
 
-if (playerOne === computer) {
-  console.log("You Tied!")
-} else if (playerOne === "rock") {
-  if (computer === "paper") {
-    console.log("You Lose!")
-  } else {
-    console.log("You Win!")
-  }
-} else if (playerOne === "paper") {
-  if (computer === "scissors") {
-    console.log("You Lose!")
-  } else {
-    console.log("You Win!")
-  }
-} else {
-  if (computer === "rock") {
-    console.log("You Lose!")
-  } else {
-    console.log("You Win!")
-  }
+  case 3:
+    console.log(3);
+    break;
+  
+  default: 
+    console.log("No Match");
 }

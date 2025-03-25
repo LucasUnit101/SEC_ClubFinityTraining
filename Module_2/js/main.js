@@ -1,4 +1,2 @@
-console.log(Math.floor(Math.random() * 10) + 1);
-console.log(Math.floor(Math.random() * 10) + 1);
-console.log(Math.floor(Math.random() * 10) + 1);
-console.log(Math.floor(Math.random() * 10) + 1);
+const anyName = "Lucas"
+console.log(anyName.charAt(Math.floor(Math.random() * anyName.length)));

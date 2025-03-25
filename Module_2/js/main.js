@@ -1,5 +1,4 @@
-const myNumber = 42;
-const myFloat = 42.01;
-const myString = "42"
-
-console.log(isNaN("Dave"));
+console.log(Math.floor(Math.random() * 10) + 1);
+console.log(Math.floor(Math.random() * 10) + 1);
+console.log(Math.floor(Math.random() * 10) + 1);
+console.log(Math.floor(Math.random() * 10) + 1);

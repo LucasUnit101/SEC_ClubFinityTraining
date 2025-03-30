@@ -1,16 +1,9 @@
-// Loops
+// Functions
 
-let name = "Lucas"
-let counter = 0;
-let myLetter;
-while (counter <= 3) { 
-  myLetter = name[counter];
-  console.log(myLetter);
-  if (counter === 1) {
-    counter += 2;
-    continue;
-  }
-  if (myLetter === "v") break;
-  counter++;
-}
-console.log(counter);
+// Function Declaration Syntax:
+
+const toProperCase = (name) => { 
+  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+};
+
+console.log(toProperCase("dAvE"));

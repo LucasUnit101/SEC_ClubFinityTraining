@@ -1,9 +1,29 @@
-// Functions
+// var, let, and const 
 
-// Function Declaration Syntax:
+// global scope
+var x = 1; // function scoped
+let y = 2; // blocked scoped
+const z = 3; 
 
-const toProperCase = (name) => { 
-  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-};
+console.log(`global: ${x}`);
+console.log(`global: ${y}`);
+console.log(`global: ${z}`);
 
-console.log(toProperCase("dAvE"));
+function myFunc() {
+  var x = 10;
+  const z = 5;
+  
+  { 
+    var x = 11; // function scoped
+    const z = 6; // block scoped
+    console.log(`block: ${x}`);
+    console.log(`block: ${y}`);
+    console.log(`block: ${z}`);
+  }
+
+  console.log(`function: ${x}`);
+  console.log(`function: ${y}`);
+  console.log(`function: ${z}`);
+}
+
+myFunc();

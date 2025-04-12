@@ -1,29 +1,21 @@
-// var, let, and const 
+// Arrays 
 
-// global scope
-var x = 1; // function scoped
-let y = 2; // blocked scoped
-const z = 3; 
+const equipShelfA = ["baseball", "football", "volleyball"];
+const equipShelfB = ["basketball", "golf balls", "tennis balls"];
 
-console.log(`global: ${x}`);
-console.log(`global: ${y}`);
-console.log(`global: ${z}`);
+const clothesShelfA = ["tank tops", "t-shirts", "jerseys"];
+const clothesShelfB = ["sweat tops", "sweat pants", "hoodies"];
 
-function myFunc() {
-  var x = 10;
-  const z = 5;
-  
-  { 
-    var x = 11; // function scoped
-    const z = 6; // block scoped
-    console.log(`block: ${x}`);
-    console.log(`block: ${y}`);
-    console.log(`block: ${z}`);
-  }
+console.log(equipShelfA[1]);
 
-  console.log(`function: ${x}`);
-  console.log(`function: ${y}`);
-  console.log(`function: ${z}`);
-}
+console.log(equipShelfB[0]);
 
-myFunc();
+const equipDept = [equipShelfA, equipShelfB];
+const clothesDept = [clothesShelfA, clothesShelfB];
+
+console.log(equipDept[0][1]);
+console.log(clothesDept[1][0]);
+
+const sportsStore = [equipDept, clothesDept];
+console.log(sportsStore[0][0][1]);
+console.log(sportsStore[1][1][0]);
